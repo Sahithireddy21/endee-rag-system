@@ -1,0 +1,25 @@
+# Core dependencies for RAG system
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+pydantic
+pydantic-settings
+
+# HTTP clients
+httpx
+aiohttp
+
+# OpenAI
+openai
+
+# Document processing
+PyPDF2
+pdfplumber
+
+# Basic ML/Math
+numpy
+scipy
+
+# Logging
+structlog

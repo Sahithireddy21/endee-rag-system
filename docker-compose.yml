@@ -1,0 +1,15 @@
+services:
+  endee:
+    image: endeeio/endee-server:latest
+    container_name: endee-vectordb
+    ports:
+      - "8080:8080"
+    volumes:
+      - endee_data:/data
+    environment:
+      - NDD_PORT=8080
+      - NDD_HOST=0.0.0.0
+    restart: unless-stopped
+
+volumes:
+  endee_data:
